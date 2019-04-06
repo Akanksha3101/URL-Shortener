@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class=''>
+<h1>
+    Success!
+</h1>
+<p id="url2"><h3 class="makeblack">Original Link>></h3>{{ object.url }}</p>
+<h3 class="makeblack">Shortened Link>></h3>
+<p><a class='btn btn-primary btn-link'  href='{{ object.get_short_url }}'>{{ object.get_short_url }}</a></p>
+    <a class="btn btn-default" href="/">+Shorten another URL</a>
+</div>
+{% endblock content %}
